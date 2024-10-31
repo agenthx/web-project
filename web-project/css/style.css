@@ -1,0 +1,9 @@
+body{
+    margin: 0;
+    background-color: #314366;
+}
+
+.banner {
+    height: 250px;
+    width: 150%;
+}
