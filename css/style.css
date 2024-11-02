@@ -1,9 +1,31 @@
 body{
-    margin: 0;
+    margin: 5;
     background-color: #314366;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.banner {
-    height: 250px;
-    width: 150%;
+.banner{
+    height: 20vh;
+    width: 100%;
+    background-color: #70b6e7;
+
+}
+
+.banner img {
+    width: 15%;
+    height: 100%;
+    float: right;
+}
+
+.banlogo{
+    clear: both;
+    float: left;
+}
+
+
+.banner h1 {
+    display: inline-block;
+    margin-left: 32%;
+    margin-top: 3%;
+    font-size: 4em;
 }
