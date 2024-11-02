@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #314366;
+}
+
+h1{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    height: 20vh;
+    width: 100%;
+    background-color: rgba(250, 235, 215, 0.274);
+}
+
+.nav {
+    height: 10vh;
+    width: 100%;
+    background-color: rgba(240, 248, 255, 0.354);
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+}
+
+.overview {
+    height: 70vh;
+    width: 50%;
+    background-color:rgba(137, 43, 226, 0.5);
+    float: left;
+}
+
+.form {
+    height: 70vh;
+    width: 50%;
+    background-color: rgba(255, 217, 0, 0.384);
+    float: right;
+}
