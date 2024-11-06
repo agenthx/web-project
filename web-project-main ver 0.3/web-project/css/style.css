@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #516aa8;
+}
+
+h1{
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.overview {
+    margin-top: 2%;
+    margin-left: 2%;
+    height: auto; 
+    width: 70%;
+    float: left;
+    padding: 40px; 
+    box-sizing: border-box;
+    background: #ffffff; /* Use a white background for contrast */
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 20px; 
+}
+
+.overview h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.overview p {
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #333;
+    font-size: 18px; 
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.overview a {
+    color: #0056b3; 
+    text-decoration: underline;
+}
+
+.overview h4 {
+    margin-top: 40px; 
+    font-size: 16px; 
+    color: #555; 
+}
+
+.banner {
+    height: 20vh;
+    width: 100%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: #6fb6e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.banner .banner-text {
+    text-align: center;
+}
+
+.banner img {
+    height: 65%;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.banner h1 {
+    font-size: 35px;
+    font-family: Arial Black, Gadget, sans-serif;
+}
+
+.nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.nav nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size:1.2em;
+    padding: 10px 30px;
+}
+
+.nav nav ul li a:hover {
+    background-color: #ff2b2b34;
+    border-radius: 5px;
+}
+
+
+.form {
+    margin-top: 2%;
+    height: 70vh;
+    width: 28%;
+    background-color:;
+    float: right;
+}
+
+@media screen and (max-width: 850px) {
+    .nav nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav nav ul li {
+        margin: 5px 0;
+    }
+}
