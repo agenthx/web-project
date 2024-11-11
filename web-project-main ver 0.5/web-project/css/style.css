@@ -3,9 +3,10 @@
     padding: 0;
 }
 body{
-    background-color: white;
+    background-color: #516aa8;
 }
 
+<<<<<<< HEAD
 
 #hero{
     background-image: url(../images/backimg.png);
@@ -13,10 +14,16 @@ body{
     background-size: cover;
     filter: blur(10px);
     height: 666px;
+=======
+h1{
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+>>>>>>> b3202b2c79311d4337f9c7a0820496c1bb0ca604
 }
 
 .overview {
-    display: none;
     margin-top: 2%;
     margin-left: 1%;
     font-family: Arial, Helvetica, sans-serif;
@@ -25,22 +32,21 @@ body{
     float: left;
     padding: 40px; 
     box-sizing: border-box;
-    background: #6fb6e7; 
+    background: #E6E6FA; 
     border-radius: 12px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     margin-bottom: 20px; 
 }
 
 .overview h1 {
-    height: 15%;
-    display: flex;
-    justify-content: center;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #333;
+    margin-bottom: 20px;
 }
 
 .overview p {
-    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #333;
     font-size: 18px; 
     line-height: 1.6;
     margin-bottom: 20px;
@@ -53,8 +59,13 @@ body{
 .overview h4 {
     margin-top: 40px; 
     font-size: 16px; 
+<<<<<<< HEAD
     color: white; 
 }    
+=======
+    color: #555; 
+}
+>>>>>>> b3202b2c79311d4337f9c7a0820496c1bb0ca604
 
 .banner {
     height: 20vh;
@@ -87,7 +98,7 @@ body{
 }
 
 .nav {
-    background-color: #3975a0;
+    background-color: #333;
     padding: 10px 0;
 }
 
@@ -100,7 +111,6 @@ body{
 .nav nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
     font-size:1.2em;
     padding: 10px 30px;
 }
@@ -112,7 +122,6 @@ body{
 
 
 .form {
-    display: none;
     margin-top: 2%;
     margin-left: 1%;
     margin-right: 1%;
@@ -120,7 +129,7 @@ body{
     font-weight: bold;
     height: auto;
     width: 31%;
-    background-color: #6fb6e7;
+    background-color: #E6E6FA;
     float: right;
     padding: 20px;
     box-sizing: border-box;
@@ -130,7 +139,7 @@ body{
 
 .form h2 {
     text-align: center;
-    color: white;
+    color: #333;
     margin-bottom: 20px;
 }
 
@@ -141,7 +150,7 @@ body{
 .form-group label {
     display: block;
     margin-bottom: 5px;
-    color: white;
+    color: #555;
 }
 
 .form-group input {
@@ -160,7 +169,7 @@ body{
 .form-submit {
     width: 100%;
     padding: 10px;
-    background-color: #FF7F50;
+    background-color: #6fb6e7;
     color: white;
     border: none;
     border-radius: 4px;
