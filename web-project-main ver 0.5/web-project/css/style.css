@@ -6,9 +6,6 @@ body{
     background-color: white;
 }
 
-#heading{
-    display: flex;
-}
 
 #hero{
     background-image: url(../images/backimg.png);
@@ -47,18 +44,17 @@ body{
     font-size: 18px; 
     line-height: 1.6;
     margin-bottom: 20px;
-}
-
+}    
 .overview a {
     color: #0056b3; 
     text-decoration: underline;
-}
+}    
 
 .overview h4 {
     margin-top: 40px; 
     font-size: 16px; 
     color: white; 
-}
+}    
 
 .banner {
     height: 20vh;
@@ -200,6 +196,7 @@ body{
 
 
 .subtxt{
+    
     margin-top: 1%;
     margin-left: 1%;
     font-family: Arial, Helvetica, sans-serif;
@@ -246,9 +243,13 @@ body{
     margin-bottom: 20px;
 }
 .running {
-    margin: left: 1%;
+    margin-left: 1%;
 }
 
+#heading{
+/* color: white; */
+float: left;
+}
 
 
 
