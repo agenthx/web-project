@@ -5,22 +5,11 @@
 body{
     background-color: #516aa8;
 }
-
-<<<<<<< HEAD
-
-#hero{
-    background-image: url(../images/backimg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: blur(10px);
-    height: 666px;
-=======
 h1{
     height: 15%;
     display: flex;
     justify-content: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
->>>>>>> b3202b2c79311d4337f9c7a0820496c1bb0ca604
 }
 
 .overview {
