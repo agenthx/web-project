@@ -1,0 +1,66 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-intro h1{
+    font-size: 66px;
+    line-height: 80px;
+}
+
+main p{
+    font-size: 18px;
+    line-height: 30px;
+}
+
+main .buttons{
+    display: flex;
+}
+
+main a{
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-top: 30px;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.primary-button{
+    background-color: var(--primary);
+}
+
+.secondary-button{
+    background-color: var(--secondary);
+}
+
+.main-qualities{
+    border-left: 4px solid var(--accent);
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.main-qualities ol{
+    counter-reset: qualities;
+}
+
+.main-qualities li{
+    counter-increment: qualities;
+}
+
+.main-qualities li::before{
+    content: counter(qualities);
+    background-color: var(--accent);
+    font-size: .8em;
+    color: #efefef;
+    line-height: 1;
+    font-weight: 900;
+    display: inline-grid;
+    place-items: center;
+    width: 1.5rem;
+    aspect-ratio: 1;
+    border: 3px solid purple;
+    border-radius: 50%; 
+
+}
