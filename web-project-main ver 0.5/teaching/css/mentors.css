@@ -8,7 +8,7 @@
 }
 
 .mentor-cards{
-    background-color: bisque;
+    background-color: var(--third);
     height: 400px;
     width: 337.44px;
     border: 3px solid;
