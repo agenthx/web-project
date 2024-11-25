@@ -24,7 +24,6 @@ body{
 a{
     cursor: pointer;
     color: black;
-    /* font-weight: bold; */
 }
 
 header{
@@ -41,7 +40,6 @@ header{
 
 header img{
     width: 60px;
-    height: 60px;
 }
 
 header .light-mode{
