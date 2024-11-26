@@ -1,0 +1,14 @@
+.map{
+    background-color: var(--primary);
+    width: fit-content;
+    padding: 20px;
+    float: right;
+}
+.map img{
+    height: 300px;
+}
+
+.contact img {
+    width: 30px;
+    height: 30px;
+}
