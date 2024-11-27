@@ -18,11 +18,15 @@
 .text{
     padding: 12px 0;
 }
+.brief{
+    line-height: 1.6;
+}
 
 .text h3{
     margin-bottom: 8px;
 }
-.period{
-    margin-top: 7px;
+.topics{
+    /* display: none; */
+    margin-top: 10px;
 }
 

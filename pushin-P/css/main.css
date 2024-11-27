@@ -35,6 +35,28 @@ header{
     border: 2px solid;
     border-radius: 20px;
 }
+nav a{
+    position: relative;
+    padding: 9px 0;
+    color: var(--background);
+}
+nav #current{
+    color: var(--primary);
+}
+nav li a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    border-radius: 12px;
+    width: 0%;
+    background:var(--third);
+    transition: all 400ms ease;
+}
+nav li a:hover:before{
+    width: 100%;
+}
 
 header img{
     width: 60px;
@@ -77,5 +99,4 @@ footer img {
 footer p{
     margin-left: 2px;
     font-size: 18px;
-    font-weight: bold;
 }
