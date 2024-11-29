@@ -29,4 +29,7 @@
     /* display: none; */
     margin-top: 10px;
 }
+.topics b{
+    color: var(--primary);
+}
 
