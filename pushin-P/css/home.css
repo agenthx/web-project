@@ -109,7 +109,8 @@ main a{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* MAKE JAVASCRIPT MAKE THESE0 */
+}
+#formPage{
     display: none;
 }
 form{
@@ -120,13 +121,14 @@ form{
     padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    row-gap: 15px;
     width: 40%;
 }
 form h1{
     color: var(--text);
     text-align: center;
     font-size: 3rem;
+    margin-bottom: 20px;
 }
 
 form div{
@@ -169,12 +171,19 @@ form input:hover{
 }
 form input:focus{
     outline: none;
-    border-color: var(--primary);
+    border-color: var(--text);
 }
 div:has(input:focus) > label{
+    background-color: var(--text);
+}
+form div.incorrect label{
     background-color: var(--primary);
 }
-form a{
+form div.incorrect input{
+    border: 2px solid var(--primary);
+}
+
+.submit{
     margin-top: 10px;
     border-radius: 1000px;
     padding: .85em 4em;
@@ -185,15 +194,13 @@ form a{
     font-weight: bold;
     transition: 200ms;
 }
-form a:hover{
+.submit:hover{
     transform: scale(1.1)
 }
-
-/* MAKE JAVASCRIPT MAKE THESE0 */
-/* body{
-    background-image: none;
+.exit{
+    display: flex;
+    justify-content: right;
 }
-main, header{
-    filter: blur(8px);
-} */
-
+ .exit path{
+    fill: var(--primary);
+}
