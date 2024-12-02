@@ -2,17 +2,20 @@
     --background: #f8fcfc;
     --bb: #B3DEE2;
     --text: #0e141a;
+    --text2: #000000ca;
     --primary: #e2315a;
     --secondary: #a99fd0;
-    --third: #e55483;
-  }
-:root[data-theme="dark"] {
-
 }
-
+.darkmode{
+    --background: #0e141a;
+    --bb: #0e141a;
+    --text: #f8fcfc;
+    --text2: #f8fcfc;
+    --primary: #e2315a;
+    --secondary: #a99fd0;
+}
 body{
     background-image: radial-gradient(hsla(185, 45%, 79%, 0.788) 2px, var(--background) 2px);
-    /* opacity: 0; */
     background-size: 40px 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--text);
@@ -23,7 +26,9 @@ a{
     color: var(--text);
     font-weight: bold;
 }
-
+button{
+    cursor: pointer;
+}
 header{
     display: flex;
     align-items: center;
@@ -52,7 +57,7 @@ nav li a::before{
     height: 3px;
     border-radius: 12px;
     width: 0%;
-    background:var(--third);
+    background:var(--primary);
     transition: all 400ms ease;
 }
 nav li a:hover:before{
