@@ -9,12 +9,6 @@ main{
     display: inline;
 }
 
-.gradient{
-    color: transparent;
-    background-image: linear-gradient(90deg, hsl(252, 80%, 72%), hsl(346, 80%, 58%));
-    background-clip: text;
-}
-
 main p{
     margin-top: 30px;
     color: var(--text2);

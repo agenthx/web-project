@@ -19,7 +19,8 @@ signupButton.onclick = function() {
         document.body.style.backgroundImage = `radial-gradient(hsla(185, 45%, 79%, 0.788) 2px, var(--background) 2px)`;
     }
 
-    const form = document.getElementById(`form`)
+    //checking form errors
+    // const form = document.getElementById(`form`)
     const firstnameInput = document.getElementById(`firstnameInput`)
     const lastnameInput = document.getElementById(`lastnameInput`)
     const emailInput = document.getElementById(`emailInput`)
@@ -30,8 +31,9 @@ signupButton.onclick = function() {
         
         let errors = getFormErrors(firstnameInput.value, lastnameInput.value, emailInput.value, numberInput.value)
         if(errors.length > 0){
-        //     e.preventDefault()
             errorMsg.innerText = errors.join(". ")
+        }else{
+
         }
     })
 
@@ -43,7 +45,7 @@ signupButton.onclick = function() {
             firstnameInput.parentElement.classList.add(`incorrect`)
         } else if(firstname.length < 3){
             errors.push(`Firstname is too short`)
-            numberInput.parentElement.classList.add(`incorrect`)
+            firstnameInput.parentElement.classList.add(`incorrect`)
         }
 
         if(lastname === `` || lastname == null){
@@ -51,7 +53,7 @@ signupButton.onclick = function() {
             lastnameInput.parentElement.classList.add(`incorrect`)
         } else if(lastname.length < 3){
             errors.push(`Lastname is too short`)
-            numberInput.parentElement.classList.add(`incorrect`)
+            lastnameInput.parentElement.classList.add(`incorrect`)
         }
 
         if(email === `` || email == null){

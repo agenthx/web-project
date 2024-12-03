@@ -14,6 +14,12 @@
     --primary: #e2315a;
     --secondary: #a99fd0;
 }
+.gradient{
+    color: transparent;
+    background-image: linear-gradient(90deg, hsl(252, 80%, 72%), hsl(346, 80%, 58%));
+    background-clip: text;
+}
+
 body{
     background-image: radial-gradient(hsla(185, 45%, 79%, 0.788) 2px, var(--background) 2px);
     background-size: 40px 40px;
@@ -40,6 +46,30 @@ header{
     margin: 15px;
     border: 2px solid;
     border-radius: 20px;
+}
+.user-info{
+    background-color: var(--primary);
+    position: relative;
+    width: 260px;
+    border: 3px solid var(--text);
+    border-radius: 30px;
+    padding: 12px;
+}
+.user-info::before,
+.user-info::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: black;
+    border-radius: inherit;
+}
+header p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--background);
+    font-weight: bold;
+    font-size: 16px;
 }
 nav a{
     position: relative;
