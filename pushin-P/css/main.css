@@ -6,6 +6,7 @@
     --primary: #e2315a;
     --secondary: #a99fd0;
     --secondary2: hsla(252, 34%, 72%, 0.262);
+    --error: red;
 }
 .darkmode{
     --background: #0e141a;
@@ -15,6 +16,7 @@
     --primary: #e2315a;
     --secondary: #a99fd0;
     --secondary2: hsla(252, 34%, 72%, 0.262);
+    --error: yellow;
 }
 .gradient{
     color: transparent;

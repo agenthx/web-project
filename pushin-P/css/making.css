@@ -1,0 +1,22 @@
+main{
+    display: flex;
+    justify-content: space-evenly;
+    row-gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+main div{
+    width: 534px;
+    /* background-color: blue; */
+}
+main img{
+    height: 400px;
+    border-radius: 30px;
+}
+main p{
+    margin-top: 10px;
+    /* background-color: var(--bb); */
+    font-size: 18px;
+    line-height: 1.7;
+}
+
