@@ -12,7 +12,8 @@ signupButton.onclick = function() {
 }
     //To exit from sign up page
     const exitButton = document.getElementById(`exitButton`)
-    exitButton.onclick = function() {
+    exitButton.onclick = exitForm;
+    function exitForm(){
         formPage.style.display = `none`;
         blurS[0].style.filter = `none`;
         blurS[1].style.filter = `none`;
@@ -33,10 +34,32 @@ signupButton.onclick = function() {
         if(errors.length > 0){
             errorMsg.innerText = errors.join(". ")
         }else{
-
+            store(firstnameInput.value, lastnameInput.value, emailInput.value, numberInput.value)
         }
     })
-
+    //store first and last name in local storage
+    const greetBox = document.getElementById(`greetBox`)
+    const greeting = document.getElementById(`greeting`)
+    const exploreBtn = document.getElementById(`exploreBtn`)
+    function store(firstname, lastname, email, number){
+        localStorage.setItem("firstName", firstname)
+        localStorage.setItem("lastName", lastname)
+        localStorage.setItem("email", email)
+        localStorage.setItem("number", number)
+        const first = localStorage.getItem(`firstName`)
+        const last =  localStorage.getItem(`lastName`)    
+        greeting.innerText = `Welcome: ${first} ${last}`;
+        greetBox.style.display = "block";
+        signupButton.style.display = "none";
+        exploreBtn.classList.remove(`secondary-button`);
+        exploreBtn.classList.add(`primary-button`);
+        exitForm();
+    }
+    if(localStorage.getItem(`firstName`) != null && localStorage.getItem(`lastName`) != null) {
+        signupButton.style.display = "none";
+        exploreBtn.classList.remove(`secondary-button`);
+        exploreBtn.classList.add(`primary-button`);
+    }
     function getFormErrors(firstname, lastname, email, number){
         let errors = []
 

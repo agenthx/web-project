@@ -1,4 +1,3 @@
-    //get theme
     let darkmode = localStorage.getItem(`darkmode`)
     //get light mode button id
     const lightModeToggle = document.getElementById(`lightModeToggle`)
@@ -21,3 +20,13 @@
         darkmode = localStorage.getItem(`darkmode`)
         darkmode !== "active" ? enableDarkmode() : disableDarkmode()
     })
+    
+    // //display greeting
+    const first = localStorage.getItem(`firstName`)
+    const last =  localStorage.getItem(`lastName`)
+    if(first != null && last != null) {
+        greeting.innerText = `Welcome : ${first} ${last}`;
+        greetBox.style.display = "block";
+    } else {
+        greetBox.style.display = "none";
+    }
