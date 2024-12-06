@@ -1,0 +1,178 @@
+main{
+    position: relative;
+    margin: 30px 40px 40px 50px;
+}
+.main-intro h1{
+    margin-top: 20px;
+    font-size: 66px;
+    line-height: 80px;
+    display: inline;
+}
+
+main p{
+    margin-top: 30px;
+    color: var(--text2);
+    font-size: 21px;
+    line-height: 37px;
+}
+
+.buttons{
+    display: flex;
+    column-gap: 20px;
+}
+
+main a{
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-top: 30px;
+    width: fit-content;
+    border-radius: 10px;
+}
+.main-qualities{
+    position: absolute;
+    bottom: -10px;
+    right: 1rem;
+    border-left: 5px solid var(--primary);
+    border-radius: 4px;
+    padding-left: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 3;
+}
+
+.main-qualities ol{
+    counter-reset: qualities;
+}
+
+.main-qualities li{
+    counter-increment: qualities;
+    transition: 500ms;
+}
+.main-qualities li:hover{
+    transform: translateY(-5px);
+}
+.main-qualities li:nth-child(even){
+    margin-left: 60px;
+}
+
+.main-qualities li::before{
+    content: counter(qualities);
+    background-color: var(--secondary);
+    font-size: .8em;
+    line-height: 1;
+    font-weight: bold;
+    display: inline-grid;
+    place-items: center;
+    width: 1.7rem;
+    aspect-ratio: 1;
+    border: 3px solid var(--text);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.form-container{
+    position: fixed;
+    top: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#formPage{
+    display: none;
+}
+form{
+    background-color: var(--background);
+    border: 3px solid;
+    box-shadow: 10px 10px 8px 0px hsla(0, 0%, 0%, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    width: 40%;
+}
+form h1{
+    color: var(--text);
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+form div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+form label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    height: 50px;
+    width: 50px;
+    background-color: var(--secondary);
+    border-radius: 10px 0 0 10px;
+}
+form path{
+    fill: var(--background);
+}
+
+form input{
+    box-sizing: border-box;
+    flex-grow: 1;
+    min-width: 0;
+    height: 50px;
+    padding: 1em;
+    font: inherit;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    border: 2px solid hsla(252, 34%, 72%, 0.262);
+    border-left: none;
+    background-color: var(--secondary2);
+    transition: 150ms;
+    color: var(--text);
+}
+form input:hover{
+    border: 2px solid var(--secondary);
+    border-left: none;
+}
+form input:focus{
+    outline: none;
+    border-color: var(--text);
+}
+div:has(input:focus) > label{
+    background-color: var(--text);
+}
+form div.incorrect label{
+    background-color: var(--primary);
+}
+form div.incorrect input{
+    border: 2px solid var(--primary);
+}
+
+.submit{
+    margin-top: 10px;
+    border-radius: 1000px;
+    padding: .85em 4em;
+    background-color: var(--primary);
+    color: var(--background);
+    font: inherit;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 200ms;
+}
+.submit:hover{
+    transform: scale(1.1)
+}
+.exit{
+    display: flex;
+    justify-content: right;
+}
+ .exit path{
+    fill: var(--primary);
+}
+#errorMsg{
+    color: var(--primary);
+}
